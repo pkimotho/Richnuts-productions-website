@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+nav .logo {
+    margin-left: 2rem;
+}
+
+nav .logo img {
+    width: 100px;
+    height: 80px;
+}
+
+.nav-links {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    line-height: 80px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: gold;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    transition: border-bottom 0.5s;
+}
+
+.nav-links li a.active,
+a:hover {
+    border-bottom: 1px solid gold;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    margin: 1.5rem 2rem 0 0;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(233, 225, 225);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+    height: calc(100% - 80px);
+    /* background-color: gray; */
+    background: #000;
+    padding: 0 80px 80px 80px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    padding: 0 1rem 2rem 3.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.intro-content {
+    flex-basis: 60%;
+    color: white;
+}
+
+.intro-content h2 {
+    margin-bottom: 0.5rem;
+    color: gold;
+}
+
+.intro-content p {
+    line-height: 2rem;
+}
+
+.intro-content-specialization {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.specialty {
+    width: 50%;
+    padding-right: 1.5rem;
+}
+
+.specialty h3 {
+    text-decoration: underline;
+    color: gold;
+}
+
+.intro-image {
+    flex-basis: 40%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio {
+    padding: 40px 80px 80px 80px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.portfolio h1 {
+    font-size: 2.5rem;
+    color: gold;
+}
+
+.portfolio h1,
+h4 {
+    margin-bottom: 1rem;
+}
+
+.portfolio p {
+    color: gold;
+}
+
+.portfolio .portfolio-samples {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.portfolio .portfolio-samples .portfolio-card {
+    flex-basis: 33%;
+    height: 30%;
+    margin-top: 3px;
+    position: relative;
+}
+
+.portfolio .portfolio-samples .portfolio-card img {
+    width: 100%;
+}
+
+.portfolio .portfolio-samples .portfolio-card .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.portfolio .portfolio-samples .portfolio-card .portfolio-overlay:hover {
+    background: #000;
+    border: 1px solid gold;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-user {
+    width: 100px;
+    height: 50px;
+    color: white;
+}
+
+.snapshot {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/IMG_0042.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.snapshot .snapshot-content {
+    width: 60%;
+    /* margin-top: 10rem; */
+    padding-left: 4rem;
+    background-color: #000;
+}
+
+.snapshot .snapshot-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: gold;
+}
+
+.snapshot .snapshot-content p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/video-2577667_1920.jpg);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.contact .logo-image {
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    z-index: 2;
+}
+
+.contact .logo-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact .contact-info {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: goldenrod;
+    z-index: 2;
+}
+
+.contact .contact-info button {
+    width: 300px;
+    height: 3rem;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: goldenrod;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    background: #000;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1044px) {
+    .snapshot .snapshot-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:898px) {
+    .snapshot .snapshot-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:785px) {
+    .snapshot .snapshot-content {
+        width: 100%;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .snapshot .snapshot-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .snapshot .snapshot-content p {
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .snapshot .snapshot-content h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .snapshot .snapshot-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 50%;
+        height: calc(100%-80px);
+        margin-right: 0;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 9;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    .specialty {
+        width: 100%;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width:543px) {
+    .intro-content {
+        flex-basis: 100%;
+    }
+    .intro-image {
+        flex-basis: 100%;
+    }
+    .portfolio .portfolio-samples .portfolio-card {
+        flex-basis: 100%;
+        height: 30%;
+        margin-top: 3px;
+        position: relative;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
