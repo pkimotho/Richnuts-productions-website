@@ -36,6 +36,7 @@ nav .logo img {
 .nav-links a {
     color: gold;
     text-decoration: none;
+    font-family: 'Open Sans Condensed';
     font-size: 0.9rem;
     text-transform: uppercase;
     padding: 7px 10px;
@@ -96,10 +97,12 @@ header {
 .intro-content h2 {
     margin-bottom: 0.5rem;
     color: gold;
+    font-family: 'Open Sans Condensed';
 }
 
 .intro-content p {
     line-height: 2rem;
+    font-family: 'Open Sans Condensed';
 }
 
 .intro-content-specialization {
@@ -144,10 +147,12 @@ header {
 .portfolio h1,
 h4 {
     margin-bottom: 1rem;
+    font-family: 'Open Sans Condensed';
 }
 
 .portfolio p {
     color: gold;
+    font-family: 'Open Sans Condensed';
 }
 
 .portfolio .portfolio-samples {
@@ -205,6 +210,7 @@ h4 {
     /* margin-top: 10rem; */
     padding-left: 4rem;
     background-color: #000;
+    font-family: 'Open Sans Condensed';
 }
 
 .snapshot .snapshot-content h1 {
@@ -229,6 +235,7 @@ h4 {
     align-items: center;
     position: relative;
     z-index: 0;
+    font-family: 'Open Sans Condensed';
 }
 
 .contact .overlay {
